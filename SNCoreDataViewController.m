@@ -168,31 +168,38 @@
    // if (changingFavoritesOrder) return;
     NSLog(@"wtf?");
 
-    switch (type) {
+    /*switch (type) {
         case NSFetchedResultsChangeMove:
             [self configureCell:(SNDownSideBarTableCell*)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             NSLog(@"move");
             break;
+     */
     
 
-//switch (type) {
+switch (type) {
         case NSFetchedResultsChangeInsert:
             [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+        NSLog(@"NSFetchedResultsChangeInsert?");
             break;
             
         case NSFetchedResultsChangeDelete:
             [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        NSLog(@"NSFetchedResultsChangeDelete?");
             break;
             
         case NSFetchedResultsChangeUpdate:
-            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+        //[self configureCell:(SNDownSideBarTableCell*)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+         [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+        NSLog(@"NSFetchedResultsChangeUpdate?");
             break;
-    /*
+    
       case NSFetchedResultsChangeMove:
-            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            break;
-    */
+        NSLog(@"NSFetchedResultsChangeMove?");
+           // [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:ni];
+            //[tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+        [tableView reloadData];
+        break;
+    
 }
 }
 

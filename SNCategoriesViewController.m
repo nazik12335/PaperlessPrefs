@@ -77,7 +77,7 @@
     NSFetchedResultsController *aFetchedResultsController =
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                         managedObjectContext:self.managedObjectContext
-                                          sectionNameKeyPath:@"orderIndex"
+                                          sectionNameKeyPath:nil
                                                    cacheName:nil];
     
   //  NSLog(@"%@",self.fetchedResultsController.sectionNameKeyPath);
@@ -156,7 +156,7 @@
         SNCategory *favCategory = [self.favoritesFetchedResultsController.fetchedObjects objectAtIndex:indexPath.row];
     cell.downButton.tag = indexPath.row;
         [cell.downButton addTarget:self action:@selector(downCategory:) forControlEvents:UIControlEventTouchUpInside];
-        cell.downTextLabel.text = [NSString stringWithFormat:@"%@ ",favCategory.name, cell.downButton.tag];
+        cell.downTextLabel.text = [NSString stringWithFormat:@"%@ %lu",favCategory.name, cell.downButton.tag];
         NSLog(@"conf");
         
     /*
@@ -275,6 +275,7 @@
     NSMutableArray *sortedFavorites = [NSMutableArray arrayWithArray:[self.favoritesFetchedResultsController fetchedObjects]];
     SNCategory *categoryWeWillDelete = [sortedFavorites objectAtIndex:index];
     NSLog(@"delete object : %@",categoryWeWillDelete.name);
+    
     //[context save:nil];
     
     
