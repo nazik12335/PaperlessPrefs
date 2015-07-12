@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7822B4C11B4FC7B0001057DD /* SNUpSideBarTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7822B4C01B4FC7B0001057DD /* SNUpSideBarTableCell.m */; };
+		7822B4C41B4FE019001057DD /* SNDownSideBarTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7822B4C31B4FE019001057DD /* SNDownSideBarTableCell.m */; };
+		7822B4C61B4FE03A001057DD /* SNDownSIdeBarTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7822B4C51B4FE03A001057DD /* SNDownSIdeBarTableCell.xib */; };
+		7871371C1B4BB6D7008FE4F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7871371B1B4BB6D7008FE4F9 /* main.m */; };
+		7871371F1B4BB6D7008FE4F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7871371E1B4BB6D7008FE4F9 /* AppDelegate.m */; };
+		787137221B4BB6D7008FE4F9 /* PaperlessPrefs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 787137201B4BB6D7008FE4F9 /* PaperlessPrefs.xcdatamodeld */; };
+		787137281B4BB6D7008FE4F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787137261B4BB6D7008FE4F9 /* Main.storyboard */; };
+		7871372A1B4BB6D7008FE4F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787137291B4BB6D7008FE4F9 /* Images.xcassets */; };
+		7871372D1B4BB6D7008FE4F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7871372B1B4BB6D7008FE4F9 /* LaunchScreen.xib */; };
+		787137391B4BB6D7008FE4F9 /* PaperlessPrefsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 787137381B4BB6D7008FE4F9 /* PaperlessPrefsTests.m */; };
+		787137441B4BB751008FE4F9 /* SNDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 787137431B4BB751008FE4F9 /* SNDataManager.m */; };
+		788794031B4E718F00392493 /* SNCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 788794021B4E718F00392493 /* SNCategories.m */; };
+		788794091B4E734F00392493 /* SNCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 788794081B4E734F00392493 /* SNCategory.m */; };
+		78A3E8DF1B4F0FF200D93115 /* SNUpSideBarTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A3E8DE1B4F0FF200D93115 /* SNUpSideBarTableCell.xib */; };
+		78FDB1871B4C370B00746482 /* SNCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FDB1861B4C370B00746482 /* SNCoreDataViewController.m */; };
+		78FDB18A1B4CF19000746482 /* SNCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FDB1891B4CF19000746482 /* SNCategoriesViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		787137331B4BB6D7008FE4F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7871370E1B4BB6D7008FE4F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 787137151B4BB6D7008FE4F9;
+			remoteInfo = PaperlessPrefs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7822B4BF1B4FC7B0001057DD /* SNUpSideBarTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNUpSideBarTableCell.h; path = ../SNUpSideBarTableCell.h; sourceTree = "<group>"; };
+		7822B4C01B4FC7B0001057DD /* SNUpSideBarTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNUpSideBarTableCell.m; path = ../SNUpSideBarTableCell.m; sourceTree = "<group>"; };
+		7822B4C21B4FE019001057DD /* SNDownSideBarTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNDownSideBarTableCell.h; path = ../SNDownSideBarTableCell.h; sourceTree = "<group>"; };
+		7822B4C31B4FE019001057DD /* SNDownSideBarTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNDownSideBarTableCell.m; path = ../SNDownSideBarTableCell.m; sourceTree = "<group>"; };
+		7822B4C51B4FE03A001057DD /* SNDownSIdeBarTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNDownSIdeBarTableCell.xib; sourceTree = "<group>"; };
+		787137161B4BB6D7008FE4F9 /* PaperlessPrefs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperlessPrefs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7871371A1B4BB6D7008FE4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7871371B1B4BB6D7008FE4F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7871371D1B4BB6D7008FE4F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7871371E1B4BB6D7008FE4F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		787137211B4BB6D7008FE4F9 /* PaperlessPrefs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaperlessPrefs.xcdatamodel; sourceTree = "<group>"; };
+		787137271B4BB6D7008FE4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		787137291B4BB6D7008FE4F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7871372C1B4BB6D7008FE4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		787137321B4BB6D7008FE4F9 /* PaperlessPrefsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperlessPrefsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		787137371B4BB6D7008FE4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787137381B4BB6D7008FE4F9 /* PaperlessPrefsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperlessPrefsTests.m; sourceTree = "<group>"; };
+		787137421B4BB751008FE4F9 /* SNDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNDataManager.h; path = ../SNDataManager.h; sourceTree = "<group>"; };
+		787137431B4BB751008FE4F9 /* SNDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNDataManager.m; path = ../SNDataManager.m; sourceTree = "<group>"; };
+		788794011B4E718F00392493 /* SNCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCategories.h; sourceTree = "<group>"; };
+		788794021B4E718F00392493 /* SNCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCategories.m; sourceTree = "<group>"; };
+		788794071B4E734F00392493 /* SNCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCategory.h; sourceTree = "<group>"; };
+		788794081B4E734F00392493 /* SNCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCategory.m; sourceTree = "<group>"; };
+		78A3E8DE1B4F0FF200D93115 /* SNUpSideBarTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SNUpSideBarTableCell.xib; path = ../SNUpSideBarTableCell.xib; sourceTree = "<group>"; };
+		78FDB1851B4C370B00746482 /* SNCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNCoreDataViewController.h; path = ../SNCoreDataViewController.h; sourceTree = "<group>"; };
+		78FDB1861B4C370B00746482 /* SNCoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNCoreDataViewController.m; path = ../SNCoreDataViewController.m; sourceTree = "<group>"; };
+		78FDB1881B4CF19000746482 /* SNCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNCategoriesViewController.h; path = ../SNCategoriesViewController.h; sourceTree = "<group>"; };
+		78FDB1891B4CF19000746482 /* SNCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNCategoriesViewController.m; path = ../SNCategoriesViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		787137131B4BB6D7008FE4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7871372F1B4BB6D7008FE4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7871370D1B4BB6D7008FE4F9 = {
+			isa = PBXGroup;
+			children = (
+				787137181B4BB6D7008FE4F9 /* PaperlessPrefs */,
+				787137351B4BB6D7008FE4F9 /* PaperlessPrefsTests */,
+				787137171B4BB6D7008FE4F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		787137171B4BB6D7008FE4F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				787137161B4BB6D7008FE4F9 /* PaperlessPrefs.app */,
+				787137321B4BB6D7008FE4F9 /* PaperlessPrefsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		787137181B4BB6D7008FE4F9 /* PaperlessPrefs */ = {
+			isa = PBXGroup;
+			children = (
+				7871371D1B4BB6D7008FE4F9 /* AppDelegate.h */,
+				7871371E1B4BB6D7008FE4F9 /* AppDelegate.m */,
+				787137421B4BB751008FE4F9 /* SNDataManager.h */,
+				787137431B4BB751008FE4F9 /* SNDataManager.m */,
+				78FDB1851B4C370B00746482 /* SNCoreDataViewController.h */,
+				78FDB1861B4C370B00746482 /* SNCoreDataViewController.m */,
+				78FDB1881B4CF19000746482 /* SNCategoriesViewController.h */,
+				78FDB1891B4CF19000746482 /* SNCategoriesViewController.m */,
+				787137261B4BB6D7008FE4F9 /* Main.storyboard */,
+				787137201B4BB6D7008FE4F9 /* PaperlessPrefs.xcdatamodeld */,
+				788794071B4E734F00392493 /* SNCategory.h */,
+				788794081B4E734F00392493 /* SNCategory.m */,
+				788794011B4E718F00392493 /* SNCategories.h */,
+				788794021B4E718F00392493 /* SNCategories.m */,
+				7822B4BF1B4FC7B0001057DD /* SNUpSideBarTableCell.h */,
+				7822B4C01B4FC7B0001057DD /* SNUpSideBarTableCell.m */,
+				78A3E8DE1B4F0FF200D93115 /* SNUpSideBarTableCell.xib */,
+				7822B4C21B4FE019001057DD /* SNDownSideBarTableCell.h */,
+				7822B4C31B4FE019001057DD /* SNDownSideBarTableCell.m */,
+				7822B4C51B4FE03A001057DD /* SNDownSIdeBarTableCell.xib */,
+				787137291B4BB6D7008FE4F9 /* Images.xcassets */,
+				7871372B1B4BB6D7008FE4F9 /* LaunchScreen.xib */,
+				787137191B4BB6D7008FE4F9 /* Supporting Files */,
+			);
+			path = PaperlessPrefs;
+			sourceTree = "<group>";
+		};
+		787137191B4BB6D7008FE4F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7871371A1B4BB6D7008FE4F9 /* Info.plist */,
+				7871371B1B4BB6D7008FE4F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		787137351B4BB6D7008FE4F9 /* PaperlessPrefsTests */ = {
+			isa = PBXGroup;
+			children = (
+				787137381B4BB6D7008FE4F9 /* PaperlessPrefsTests.m */,
+				787137361B4BB6D7008FE4F9 /* Supporting Files */,
+			);
+			path = PaperlessPrefsTests;
+			sourceTree = "<group>";
+		};
+		787137361B4BB6D7008FE4F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				787137371B4BB6D7008FE4F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		787137151B4BB6D7008FE4F9 /* PaperlessPrefs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7871373C1B4BB6D7008FE4F9 /* Build configuration list for PBXNativeTarget "PaperlessPrefs" */;
+			buildPhases = (
+				787137121B4BB6D7008FE4F9 /* Sources */,
+				787137131B4BB6D7008FE4F9 /* Frameworks */,
+				787137141B4BB6D7008FE4F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaperlessPrefs;
+			productName = PaperlessPrefs;
+			productReference = 787137161B4BB6D7008FE4F9 /* PaperlessPrefs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		787137311B4BB6D7008FE4F9 /* PaperlessPrefsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7871373F1B4BB6D7008FE4F9 /* Build configuration list for PBXNativeTarget "PaperlessPrefsTests" */;
+			buildPhases = (
+				7871372E1B4BB6D7008FE4F9 /* Sources */,
+				7871372F1B4BB6D7008FE4F9 /* Frameworks */,
+				787137301B4BB6D7008FE4F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				787137341B4BB6D7008FE4F9 /* PBXTargetDependency */,
+			);
+			name = PaperlessPrefsTests;
+			productName = PaperlessPrefsTests;
+			productReference = 787137321B4BB6D7008FE4F9 /* PaperlessPrefsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7871370E1B4BB6D7008FE4F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = nazar;
+				TargetAttributes = {
+					787137151B4BB6D7008FE4F9 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					787137311B4BB6D7008FE4F9 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 787137151B4BB6D7008FE4F9;
+					};
+				};
+			};
+			buildConfigurationList = 787137111B4BB6D7008FE4F9 /* Build configuration list for PBXProject "PaperlessPrefs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7871370D1B4BB6D7008FE4F9;
+			productRefGroup = 787137171B4BB6D7008FE4F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				787137151B4BB6D7008FE4F9 /* PaperlessPrefs */,
+				787137311B4BB6D7008FE4F9 /* PaperlessPrefsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		787137141B4BB6D7008FE4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7822B4C61B4FE03A001057DD /* SNDownSIdeBarTableCell.xib in Resources */,
+				787137281B4BB6D7008FE4F9 /* Main.storyboard in Resources */,
+				7871372D1B4BB6D7008FE4F9 /* LaunchScreen.xib in Resources */,
+				7871372A1B4BB6D7008FE4F9 /* Images.xcassets in Resources */,
+				78A3E8DF1B4F0FF200D93115 /* SNUpSideBarTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787137301B4BB6D7008FE4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		787137121B4BB6D7008FE4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7822B4C11B4FC7B0001057DD /* SNUpSideBarTableCell.m in Sources */,
+				78FDB1871B4C370B00746482 /* SNCoreDataViewController.m in Sources */,
+				7871371F1B4BB6D7008FE4F9 /* AppDelegate.m in Sources */,
+				7871371C1B4BB6D7008FE4F9 /* main.m in Sources */,
+				7822B4C41B4FE019001057DD /* SNDownSideBarTableCell.m in Sources */,
+				788794031B4E718F00392493 /* SNCategories.m in Sources */,
+				787137441B4BB751008FE4F9 /* SNDataManager.m in Sources */,
+				78FDB18A1B4CF19000746482 /* SNCategoriesViewController.m in Sources */,
+				788794091B4E734F00392493 /* SNCategory.m in Sources */,
+				787137221B4BB6D7008FE4F9 /* PaperlessPrefs.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7871372E1B4BB6D7008FE4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787137391B4BB6D7008FE4F9 /* PaperlessPrefsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		787137341B4BB6D7008FE4F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 787137151B4BB6D7008FE4F9 /* PaperlessPrefs */;
+			targetProxy = 787137331B4BB6D7008FE4F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		787137261B4BB6D7008FE4F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				787137271B4BB6D7008FE4F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7871372B1B4BB6D7008FE4F9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7871372C1B4BB6D7008FE4F9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7871373A1B4BB6D7008FE4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7871373B1B4BB6D7008FE4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7871373D1B4BB6D7008FE4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PaperlessPrefs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7871373E1B4BB6D7008FE4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PaperlessPrefs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		787137401B4BB6D7008FE4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PaperlessPrefsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperlessPrefs.app/PaperlessPrefs";
+			};
+			name = Debug;
+		};
+		787137411B4BB6D7008FE4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PaperlessPrefsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperlessPrefs.app/PaperlessPrefs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		787137111B4BB6D7008FE4F9 /* Build configuration list for PBXProject "PaperlessPrefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7871373A1B4BB6D7008FE4F9 /* Debug */,
+				7871373B1B4BB6D7008FE4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7871373C1B4BB6D7008FE4F9 /* Build configuration list for PBXNativeTarget "PaperlessPrefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7871373D1B4BB6D7008FE4F9 /* Debug */,
+				7871373E1B4BB6D7008FE4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7871373F1B4BB6D7008FE4F9 /* Build configuration list for PBXNativeTarget "PaperlessPrefsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787137401B4BB6D7008FE4F9 /* Debug */,
+				787137411B4BB6D7008FE4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		787137201B4BB6D7008FE4F9 /* PaperlessPrefs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				787137211B4BB6D7008FE4F9 /* PaperlessPrefs.xcdatamodel */,
+			);
+			currentVersion = 787137211B4BB6D7008FE4F9 /* PaperlessPrefs.xcdatamodel */;
+			path = PaperlessPrefs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7871370E1B4BB6D7008FE4F9 /* Project object */;
+}

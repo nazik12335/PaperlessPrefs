@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>154C9A92-192B-4D12-9D5D-F71297A367FF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PaperlessPrefs</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>618CC25E485B964FDE301F29709CB2A25F097664</key>
+		<string>github.com:nazik12335/PaperlessPrefs.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PaperlessPrefs.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>618CC25E485B964FDE301F29709CB2A25F097664</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:nazik12335/PaperlessPrefs.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>618CC25E485B964FDE301F29709CB2A25F097664</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>618CC25E485B964FDE301F29709CB2A25F097664</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PaperlessPrefs</string>
+		</dict>
+	</array>
+</dict>
+</plist>
