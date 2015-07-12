@@ -36,7 +36,7 @@
 }
 
 -(void)add {
-    [self deleteAllObjects];
+   /* [self deleteAllObjects];
     self.categories = [self addCategories];
     
     
@@ -65,7 +65,7 @@
 
    // [self addNonFavoriteCategoryWithName:@"Music"];
    // [self print];
-
+*/
    
 }
 
@@ -132,8 +132,8 @@
 
     SNCategories *categories = [NSEntityDescription insertNewObjectForEntityForName:@"SNCategories" inManagedObjectContext:self.managedObjectContext];
     
-    //NSManagedObjectID *moID = [self.managedObjectContext objec];
-    
+ //  NSManagedObjectID *moID = [self.managedObjectContext objec];
+   // moID = [SNCategories objectId];
     return categories;
 
 }

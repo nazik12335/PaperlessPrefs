@@ -77,7 +77,7 @@
     NSFetchedResultsController *aFetchedResultsController =
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                         managedObjectContext:self.managedObjectContext
-                                          sectionNameKeyPath:nil
+                                          sectionNameKeyPath:@"orderIndex"
                                                    cacheName:nil];
     
   //  NSLog(@"%@",self.fetchedResultsController.sectionNameKeyPath);
@@ -123,7 +123,7 @@
     NSFetchedResultsController *aFetchedResultsController =
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                         managedObjectContext:self.managedObjectContext
-                                          sectionNameKeyPath:nil
+                                          sectionNameKeyPath:@"orderIndex"
                                                    cacheName:nil];
     
     //  NSLog(@"%@",self.fetchedResultsController.sectionNameKeyPath);
@@ -145,6 +145,39 @@
 
 #pragma mark - UITableViewDataSource
 
+-(void)configureCell:(SNDownSideBarTableCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+
+   // static NSString *identifier = @"downSideBarTableCell";
+    //static NSString *identifier2 = @"upSideBarTableCell";
+    
+    //if (indexPath.section == 0) {
+        //SNDownSideBarTableCell *cell = (SNDownSideBarTableCell*)[tableView dequeueReusableCellWithIdentifier:identifier];
+        
+        SNCategory *favCategory = [self.favoritesFetchedResultsController.fetchedObjects objectAtIndex:indexPath.row];
+    cell.downButton.tag = indexPath.row;
+        [cell.downButton addTarget:self action:@selector(downCategory:) forControlEvents:UIControlEventTouchUpInside];
+        cell.downTextLabel.text = [NSString stringWithFormat:@"%@ ",favCategory.name, cell.downButton.tag];
+        NSLog(@"conf");
+        
+    /*
+    }else if (indexPath.section == 1) {
+        SNUpSideBarTableCell *cell = (SNUpSideBarTableCell*)[tableView dequeueReusableCellWithIdentifier:identifier2];
+        
+        SNCategory *nonFavCategory = [self.nonFavoritesFetchedResultsController.fetchedObjects objectAtIndex:indexPath.row];
+        
+        cell.upButton.tag = indexPath.row;
+        [cell.upButton addTarget:self action:@selector(upCategory:) forControlEvents:UIControlEventTouchUpInside];
+        cell.upTextLabel.text = nonFavCategory.name;
+        
+        */
+        
+  //  }
+    
+//}
+
+
+}
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *identifier = @"downSideBarTableCell";
@@ -154,9 +187,10 @@
            SNDownSideBarTableCell *cell = (SNDownSideBarTableCell*)[tableView dequeueReusableCellWithIdentifier:identifier];
         
         SNCategory *favCategory = [self.favoritesFetchedResultsController.fetchedObjects objectAtIndex:indexPath.row];
-        cell.downButton.tag = indexPath.row;
+        cell.downButton.tag = [favCategory.orderIndex integerValue];
         [cell.downButton addTarget:self action:@selector(downCategory:) forControlEvents:UIControlEventTouchUpInside];
-        cell.downTextLabel.text = favCategory.name;
+        cell.downTextLabel.text = [NSString stringWithFormat:@"%@ %lu",favCategory.name, cell.downButton.tag];
+        NSLog(@"conf");
         return cell;
 
     }else if (indexPath.section == 1) {
@@ -167,11 +201,13 @@
         cell.upButton.tag = indexPath.row;
         [cell.upButton addTarget:self action:@selector(upCategory:) forControlEvents:UIControlEventTouchUpInside];
         cell.upTextLabel.text = nonFavCategory.name;
+        
         return cell;
         
     }
     return nil;
 }
+ */
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
 
@@ -204,6 +240,10 @@
     NSInteger index = button.tag;
     NSLog(@"%lu",index);
     [self deleteObjectAtIndex:index];
+    
+    //NSMutableArray *sortedFavorites = [NSMutableArray arrayWithArray:[self.favoritesFetchedResultsController fetchedObjects]];
+    
+    
 }
 
 -(void)upCategory:(UIButton*)button {
@@ -232,19 +272,10 @@
 
 -(void)deleteObjectAtIndex:(NSInteger)index {
 
-    NSError *error = nil;
-    
-    NSManagedObjectContext *context = [self.favoritesFetchedResultsController managedObjectContext];
-    NSInteger toIndex = [self.favoritesFetchedResultsController.fetchedObjects count];
-    //[context deleteObject:[self.nonFavoritesFetchedResultsController.fetchedObjects objectAtIndex:index]];
-    SNCategories *categories;
-    SNCategory *category = [self.favoritesFetchedResultsController.fetchedObjects objectAtIndex:index];
-    NSLog(@"cat name%@",category.name);
-    //[categories insertObject:category inNonFavoritesAtIndex:toIndex+1];
-    //[context objectWithID:<#(NSManagedObjectID *)#>];
-    
-   
-    [context save:nil];
+    NSMutableArray *sortedFavorites = [NSMutableArray arrayWithArray:[self.favoritesFetchedResultsController fetchedObjects]];
+    SNCategory *categoryWeWillDelete = [sortedFavorites objectAtIndex:index];
+    NSLog(@"delete object : %@",categoryWeWillDelete.name);
+    //[context save:nil];
     
     
 }
@@ -255,8 +286,23 @@
 
 -(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
 
+    NSLog(@"sad");
+    changingFavoritesOrder = YES;
     
-    //SNCategory *category = [self.favoritesFetchedResultsController.fetchedObjects objectAtIndex:<#(NSUInteger)#>];
+    NSMutableArray *sortedFavorites = [NSMutableArray arrayWithArray:[self.favoritesFetchedResultsController fetchedObjects]];
+    SNCategory *categoryWeAreMoving = [sortedFavorites objectAtIndex:sourceIndexPath.row];
+    [sortedFavorites removeObjectAtIndex:sourceIndexPath.row];
+    [sortedFavorites insertObject:categoryWeAreMoving atIndex:destinationIndexPath.row];
+    NSLog(@"cat name : %@",categoryWeAreMoving.name);
+    [sortedFavorites enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        SNCategory *fCategory = (SNCategory*)obj;
+        fCategory.orderIndex = [NSNumber numberWithInteger:idx];
+        
+    }];
+    [self.managedObjectContext save:nil];
+    [self.tableView reloadData];
+    changingFavoritesOrder = NO;
+    
     
     
 }

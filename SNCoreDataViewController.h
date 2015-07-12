@@ -11,6 +11,10 @@
 
 @interface SNCoreDataViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
+{
+    BOOL changingFavoritesOrder;
+}
+
 @property (strong, nonatomic) NSFetchedResultsController *favoritesFetchedResultsController;
 @property (strong, nonatomic) NSFetchedResultsController *nonFavoritesFetchedResultsController;
 

@@ -7,6 +7,7 @@
 //
 #import "SNCoreDataViewController.h"
 #import "SNDataManager.h"
+#import "SNDownSideBarTableCell.h"
 
 @interface SNCoreDataViewController ()
 
@@ -70,6 +71,22 @@
     return 0;
 }
 
+- (SNDownSideBarTableCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //static NSString* identifier = @"Cell";
+    
+    static NSString *identifier = @"downSideBarTableCell";
+    
+    SNDownSideBarTableCell *cell = (SNDownSideBarTableCell*)[tableView dequeueReusableCellWithIdentifier:identifier];
+    
+   
+    
+    [self configureCell:cell atIndexPath:indexPath];
+    
+    return cell;
+}
+
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString* identifier = @"Cell";
@@ -84,7 +101,7 @@
     
     return cell;
 }
-
+*/
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
@@ -148,7 +165,17 @@
 {
     UITableView *tableView = self.tableView;
     
-    switch(type) {
+   // if (changingFavoritesOrder) return;
+    NSLog(@"wtf?");
+
+    switch (type) {
+        case NSFetchedResultsChangeMove:
+            [self configureCell:(SNDownSideBarTableCell*)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            NSLog(@"move");
+            break;
+    
+
+//switch (type) {
         case NSFetchedResultsChangeInsert:
             [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
@@ -160,17 +187,18 @@
         case NSFetchedResultsChangeUpdate:
             [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
-            
-        case NSFetchedResultsChangeMove:
+    /*
+      case NSFetchedResultsChangeMove:
             [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
             [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
-    }
+    */
+}
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
-    [self.tableView endUpdates];
+   [self.tableView endUpdates];
 }
 
 /*
